@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Prank Agreement - Federal Investigative Authorization</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; background: #f8f9fa; color: #212529; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border: 2px solid #003087; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #003087; border-bottom: 3px solid #e63946; padding-bottom: 10px; }
+        .form-group { margin: 15px 0; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="email"], input[type="tel"], select { width: 100%; padding: 10px; border: 1px solid #003087; border-radius: 4px; }
+        .checkbox-list { margin: 20px 0; }
+        .checkbox-item { display: flex; align-items: center; margin: 8px 0; }
+        .checkbox-item input { margin-right: 10px; }
+        .btn { background: #003087; color: white; padding: 12px 25px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .btn:hover { background: #00205b; }
+        .hidden { display: none; }
+        .loader { text-align: center; font-style: italic; color: #6c757d; margin: 20px 0; }
+        .success { color: #28a745; font-weight: bold; text-align: center; }
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Page 1: Agreement -->
+    <div id="page1" class="page active">
+        <h1>ABC PRANK AGREEMENT</h1>
+        <p style="text-align:center; font-size:14px; color:#6c757d;">Federal Trade Commission (FTC) & Federal Bureau of Investigation (FBI) Joint Investigative Protocol</p>
+
+        <div class="form-group">
+            <label for="name">Full Legal Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="ssn">Social Security Number (SSN):</label>
+            <input type="text" id="ssn" placeholder="XXX-XX-XXXX" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Residential Address:</label>
+            <input type="text" id="address" required>
+        </div>
+
+        <div class="checkbox-list">
+            <p><strong>Select to acknowledge each condition:</strong></p>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c1"> <label for="c1">1. Limited-Purpose Authorization: The account may be used solely for the investigative purpose defined by the supervising agency.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c2"> <label for="c2">2. Strict Identity Verification: The individual must verify identity at every login or transaction using government-approved authentication methods.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c3"> <label for="c3">3. Monitoring & Recording: All activity on the account will be monitored, logged, and subject to real-time review by federal officers.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c4"> <label for="c4">4. No Third-Party Access: The account may not be shared, delegated, or accessed by any third party under any circumstances.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c5"> <label for="c5">5. Restricted Funds Movement: Transfers, withdrawals, or deposits may only occur with prior written approval from the assigned federal officer.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c6"> <label for="c6">6. Prohibited Transactions: High-risk or international transactions are strictly forbidden unless explicitly authorized.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c7"> <label for="c7">7. Asset-Freeze Compliance: The user must comply with any temporary freezes, holds, or restrictions placed on the account during the investigation.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c8"> <label for="c8">8. Confidentiality Mandate: The individual is prohibited from disclosing the account’s purpose, status, or related instructions to anyone.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c9"> <label for="c9">9. Mandatory Reporting: Any suspicious contact, request, or attempt to access the account must be immediately reported to the supervising officer.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c10"> <label for="c10">10. Location Tracking Requirement: The individual must maintain a verified location while using the account, if required by the investigation.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c11"> <label for="c11">11. Device Restriction: Access to the account is limited to approved devices that meet federal security standards.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c12"> <label for="c12">12. Audit Cooperation: The individual must fully cooperate with any federal audit or review regarding the account’s use.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c13"> <label for="c13">13. Breach Consequences: Any violation of the conditions may result in immediate revocation of account access and additional charges.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c14"> <label for="c14">14. Transaction Delay Authority: Federal authorities may delay, block, or reverse any transaction without prior notice if deemed necessary.</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="c15"> <label for="c15">15. Continued Legal Status Review: The suspect-victim’s status will be continuously reviewed, and permissions may be modified at any time based on investigation.</label>
+            </div>
+        </div>
+
+        <button class="btn" onclick="nextPage(1)">Next</button>
+    </div>
+
+    <!-- Page 2: Device Selection -->
+    <div id="page2" class="page">
+        <h2>Device Authorization for Federal Monitoring</h2>
+        <div class="form-group">
+            <label for="device">Choose Your Device for Login:</label>
+            <select id="device" onchange="showPhoneModel()">
+                <option value="">-- Select Device --</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablet</option>
+                <option value="phone">Cell Phone</option>
+                <option value="desktop">Desktop</option>
+            </select>
+        </div>
+
+        <div id="phoneModelSection" class="form-group hidden">
+            <label for="phoneModel">Choose Your Cell Phone Model:</label>
+            <select id="phoneModel" onchange="showiPhoneModel()">
+                <option value="">-- Select Model --</option>
+                <option value="iphone">iPhone</option>
+                <option value="samsung">Samsung</option>
+                <option value="remi">Remi</option>
+                <option value="solka">Solka</option>
+                <option value="fitzo">Fitzo</option>
+            </select>
+        </div>
+
+        <div id="iphoneModelSection" class="form-group hidden">
+            <label for="iphoneModel">Select Your iPhone Model:</label>
+            <select id="iphoneModel">
+                <option value="">-- Select Model --</option>
+                <option>iPhone 11</option>
+                <option>iPhone 11 Pro</option>
+                <option>iPhone 11 Pro Max</option>
+                <option>iPhone 12</option>
+                <option>iPhone 12 Pro</option>
+                <option>iPhone 12 Pro Max</option>
+                <option>iPhone 13</option>
+                <option>iPhone 13 Pro</option>
+                <option>iPhone 13 Pro Max</option>
+                <option>iPhone 14</option>
+                <option>iPhone 14 Pro</option>
+                <option>iPhone 14 Pro Max</option>
+                <option>iPhone 15</option>
+                <option>iPhone 15 Pro</option>
+                <option>iPhone 15 Pro Max</option>
+                <option>iPhone 16</option>
+                <option>iPhone 16 Pro</option>
+                <option>iPhone 16 Pro Max</option>
+                <option>iPhone 17</option>
+                <option>iPhone 17 Pro</option>
+                <option>iPhone 17 Pro Max</option>
+            </select>
+        </div>
+
+        <div id="ipSection" class="form-group hidden">
+            <label for="ip">Enter IP Address of Your Selected iPhone Model:</label>
+            <input type="text" id="ip" placeholder="e.g., 192.168.1.100">
+        </div>
+
+        <button class="btn hidden" id="deviceNext" onclick="nextPage(2)">Next</button>
+    </div>
+
+    <!-- Page 3: Face Verification -->
+    <div id="page3" class="page">
+        <h2>Face ID Verification (Facial Recognition Scan)</h2>
+        <p>Upload a clear selfie for federal biometric verification.</p>
+        <input type="file" id="facePhoto" accept="image/*">
+        <div id="faceStatus" class="loader hidden">Scanning face... Please wait 60 seconds.</div>
+        <div id="faceSuccess" class="success hidden">Face Verification Successfully Done</div>
+        <button class="btn hidden" id="faceNext" onclick="nextPage(3)">Next</button>
+    </div>
+
+    <!-- Page 4: ID Verification -->
+    <div id="page4" class="page">
+        <h2>ID Verification (Government-Issued Document)</h2>
+        <p>Upload Driver's License or SSN Card (front side only).</p>
+        <input type="file" id="idPhoto" accept="image/*">
+        <div id="idStatus" class="loader hidden">Verifying ID... Please wait 60 seconds.</div>
+        <div id="idSuccess" class="success hidden">ID Verification Successfully Done</div>
+        <button class="btn hidden" id="idNext" onclick="nextPage(4)">Next</button>
+    </div>
+
+    <!-- Page 5: Support Partner -->
+    <div id="page5" class="page">
+        <h2>Support Partner Assignment</h2>
+        <div class="form-group">
+            <label for="partner">Choose Your Support Partner (Enter Name):</label>
+            <input type="text" id="partner" placeholder="e.g., Agent Johnson">
+        </div>
+        <button class="btn" onclick="nextPage(5)">Next</button>
+    </div>
+
+    <!-- Page 6: Code Verification -->
+    <div id="page6" class="page">
+        <h2>Secure Code Verification</h2>
+        <div class="form-group">
+            <label>Put 6-digit code generated by your Apple Support Technician:</label>
+            <input type="text" maxlength="6" id="code1" placeholder="867236">
+        </div>
+        <div id="code1Msg" class="hidden">
+            <label>Put the 6-digit code generated by your FTC Investigator:</label>
+            <input type="text" maxlength="6" id="code2" placeholder="667234">
+        </div>
+        <div id="codeSuccess" class="success hidden">Code Verified Successfully</div>
+        <button class="btn hidden" id="codeNext" onclick="nextPage(6)">Next</button>
+    </div>
+
+    <!-- Final Loading & Success -->
+    <div id="final" class="page">
+        <div class="loader">Please wait while we process your authorization...</div>
+        <div id="loadingBar" style="width:100%; background:#eee; height:10px; margin:20px 0; border-radius:5px;">
+            <div id="progress" style="width:0%; background:#003087; height:100%; border-radius:5px; transition: width 0.5s;"></div>
+        </div>
+        <div id="finalSuccess" class="success hidden" style="font-size:18px; padding:20px;">
+            <strong>Your request has been accepted successfully.</strong><br>
+            We will inform you within the next 48 hours.
+        </div>
+    </div>
+</div>
+
+<script>
+    // Page navigation
+    function nextPage(current) {
+        document.getElementById(`page${current}`).classList.remove('active');
+        document.getElementById(`page${current + 1}`).classList.add('active');
+    }
+
+    // Device selection logic
+    function showPhoneModel() {
+        const device = document.getElementById('device').value;
+        const phoneSection = document.getElementById('phoneModelSection');
+        const iphoneSection = document.getElementById('iphoneModelSection');
+        const ipSection = document.getElementById('ipSection');
+        const nextBtn = document.getElementById('deviceNext');
+
+        if (device === 'phone') {
+            phoneSection.classList.remove('hidden');
+        } else {
+            phoneSection.classList.add('hidden');
+            iphoneSection.classList.add('hidden');
+            ipSection.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+        }
+    }
+
+    function showiPhoneModel() {
+        const model = document.getElementById('phoneModel').value;
+        const iphoneSection = document.getElementById('iphoneModelSection');
+        const ipSection = document.getElementById('ipSection');
+        const nextBtn = document.getElementById('deviceNext');
+
+        if (model === 'iphone') {
+            iphoneSection.classList.remove('hidden');
+        } else {
+            iphoneSection.classList.add('hidden');
+            ipSection.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+        }
+    }
+
+    // Enable IP next after model select
+    document.getElementById('iphoneModel').addEventListener('change', function() {
+        if (this.value) {
+            document.getElementById('ipSection').classList.remove('hidden');
+            document.getElementById('deviceNext').classList.remove('hidden');
+        }
+    });
+
+    // Page 1: Check all checkboxes
+    document.querySelector('button[onclick="nextPage(1)"]').addEventListener('click', function(e) {
+        const checks = document.querySelectorAll('input[type="checkbox"]');
+        let allChecked = true;
+        checks.forEach(c => { if (!c.checked) allChecked = false; });
+        if (!allChecked || !document.getElementById('name').value || !document.getElementById('email').value) {
+            alert('All fields and checkboxes are required, motherfucker!');
+            e.preventDefault();
+        }
+    });
+
+    // Face verification simulation
+    document.getElementById('facePhoto').addEventListener('change', function() {
+        if (this.files[0]) {
+            const status = document.getElementById('faceStatus');
+            const success = document.getElementById('faceSuccess');
+            const next = document.getElementById('faceNext');
+            status.classList.remove('hidden');
+            setTimeout(() => {
+                status.classList.add('hidden');
+                success.classList.remove('hidden');
+                next.classList.remove('hidden');
+            }, 60000);
+        }
+    });
+
+    // ID verification simulation
+    document.getElementById('idPhoto').addEventListener('change', function() {
+        if (this.files[0]) {
+            const status = document.getElementById('idStatus');
+            const success = document.getElementById('idSuccess');
+            const next = document.getElementById('idNext');
+            status.classList.remove('hidden');
+            setTimeout(() => {
+                status.classList.add('hidden');
+                success.classList.remove('hidden');
+                next.classList.remove('hidden');
+            }, 60000);
+        }
+    });
+
+    // Code verification
+    document.getElementById('code1').addEventListener('input', function() {
+        if (this.value === '867236') {
+            document.getElementById('code1Msg').classList.remove('hidden');
+        }
+    });
+
+    document.getElementById('codeNext').addEventListener('click', function() {
+        const code2 = document.getElementById('code2').value;
+        if (code2 === '667234') {
+            document.getElementById('codeSuccess').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('page6').classList.remove('active');
+                document.getElementById('final').classList.add('active');
+                startLoading();
+            }, 1000);
+        } else {
+            alert('Wrong code, chutiye!');
+        }
+    });
+
+    // Final loading 2 minutes
+    function startLoading() {
+        const progress = document.getElementById('progress');
+        let width = 0;
+        const interval = setInterval(() => {
+            width += 1;
+            progress.style.width = width + '%';
+            if (width >= 100) {
+                clearInterval(interval);
+                document.querySelector('.loader').classList.add('hidden');
+                document.getElementById('finalSuccess').classList.remove('hidden');
+            }
+        }, 1200); // 120 seconds = 2 minutes
+    }
+</script>
+
+</body>
+</html>
